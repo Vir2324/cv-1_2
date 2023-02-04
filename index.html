@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/940b2eb674.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/x-icon" href="favicon_io/logo.ico">
+    <link rel="shortcut icon" href="/favicon_io/logo.ico"> 
+  
+    
+</head>
+<body>
+   
+    <header>
+        <nav id="navbar">
+            <div class="myicono"><i class="fas fa-bars"></i></div>
+            <ul class="lista-small">
+               
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educacion</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+           
+        </nav>
+   </header>
+    <div id="content">
+  
+   <main>
+       <section id="principal">
+        <p> <img src="imagen/persona.png"  alt=""></p>
+        <h2 id="contacto">contacto</h2>
+        <h4>Direccion</h4>
+        <p><i class="fa fa-home" aria-hidden="true"></i> calle 40 1674-Mercedes</p>
+        <h4>Telefono</h4>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> +54 9 11 1111-222</p>
+        <h4>Correo</h4>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> vir_palacios@gmail.com </p>
+       
+        <h3 id="perfil">Perfil</h3>
+        <p>Duis ad exercitation consectetur ea sit do non ea nulla non. Mollit minim do enim eiusmod exercitation sint. Sint adipisicing anim ut pariatur ex dolore adipisicing sunt est incididunt excepteur ut amet nisi. Mollit pariatur quis pariatur velit qui et est deserunt amet. Tempor sunt excepteur quis sit culpa eu officia. Amet minim eu ullamco aliqua pariatur pariatur dolore Lorem occaecat. Irure deserunt sit tempor sunt et ut et elit labore proident cillum occaecat aute.
+
+        Ut magna reprehenderit esse magna id ullamco est sit. Officia pariatur duis occaecat nulla nostrud cillum dolore labore. Ex esse nostrud sunt veniam veniam sit dolor quis nostrud consequat Lorem incididunt velit. Dolor culpa esse reprehenderit consectetur commodo aute sit amet proident culpa duis.
+
+        Ad voluptate esse commodo aliqua commodo excepteur do. Eu dolor est cupidatat quis proident excepteur. Veniam consequat aliqua esse aliquip non. Mollit anim aliquip pariatur labore ut duis minim eiusmod deserunt.        
+        </section>
+      <section id="secundario">
+     
+     <div id="nombre">
+        <h2>Virginia Palacios</h2>
+        <h3>Diseñadora Web</h3>     
+        </div>
+       <div id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <p><strong>2018-2022</strong><strong> Estudio Crear</strong></p>
+        <p>Junior Web</p>
+        <p><strong>2011-2017</strong><strong> Casa de electrodoméstico Beto</strong></p>
+        <p>Sector de ventas</p>
+        <p><strong>2009-2011</strong><strong> Super mercados san Patricio</strong></p>
+        <p>Reposicion</p>
+        <p><strong>2005-2009</strong><strong> Estancia La Mariana</strong></p>
+        <p>Antecion al cliente</p>
+       </div>
+        <div id="educacion">
+        <h2>Educacion</h2>
+        <p>2010-2015 Tecnicatura en programacion-Univesidad de Moron</p>
+        <p>1999-2004 Escuela secundaria N3-Mercedes</p>
+        </div>
+       <div id="habilidades">
+       <h2>Habilidades</h2>
+       <ul id="conocimientos">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+       </ul>
+       <p>Aprete el boton para ver las habilidades</p>
+       <input class="boton" type="submit" value="click" onclick="mostrarDatos()"/>
+       </div>
+      </section>
+     <div id="clear"></div>
+   </main>
+   </div>
+
+   <footer>
+    <p align="center">Pie de pagina</p> 
+ </footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      function mostrarDatos(){
+       document.getElementById("conocimientos").style.display = "block";
+     }
+       $('.myicono').click(function(e){
+          
+          $('#navbar ul').toggleClass('lista-small');
+        })
+      </script>
+    
+ </body>
+</html>
